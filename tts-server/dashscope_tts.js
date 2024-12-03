@@ -189,7 +189,7 @@ class DashscopeTtsClient extends EventEmitter {
   }
 
   static test() {
-    const client = new TtsClient();
+    const client = new DashscopeTtsClient();
     client.on('ready', () => {
       console.log('TTS服务器就绪。');
 
